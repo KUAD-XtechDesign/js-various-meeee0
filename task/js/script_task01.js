@@ -29,15 +29,3 @@ $(function(){
     })
  
   })
-
-  $(function(){
-
-    $(".open_button").on("click",function(){
-      $(this).siblings(".content").slideToglle();
-    })
-
-    $(".close_button").on("click",function(){
-      $(this).parent(".content").slideUp();
-    })
-
-  })
