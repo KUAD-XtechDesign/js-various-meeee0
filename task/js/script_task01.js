@@ -14,14 +14,18 @@ $(function(){
       scrollTop = $(this).scrollTop()
       scrollRatio = scrollTop/(documentH-windowH)
       
-      separate = documentH / 6;
+      separate = documentH / 10;
   
       if(scrollTop < separate){
         $("body").removeClass().addClass("one")
-      }else if(scrollTop < separate * 2){
+      }else if(scrollTop < separate * 3){
         $("body").removeClass().addClass("two")
-      }else{
+      }else if(scrollTop < separate * 5){
         $("body").removeClass().addClass("three")
+      }else if(scrollTop < separate * 7){
+        $("body").removeClass().addClass("four")
+      }else{
+        $("body").removeClass().addClass("five")
       }
   
       console.log(windowH,documentH,scrollTop)

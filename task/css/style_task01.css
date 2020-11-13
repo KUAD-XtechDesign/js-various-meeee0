@@ -11,7 +11,7 @@ img{
 header{
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -20,22 +20,25 @@ header{
   font-family: 'Oswald', sans-serif;
 }
 
-#block{
+#frame{
   position: relative;
   margin: 100px auto;
   padding: 20px;
   max-width: 1000px;
+  padding-bottom: 0px;
 }
 
-.set{
-  background-color: rgba(255, 255, 255, 0.9);
-  min-height: 800px;
+.wall{
+  background-color: rgba(240,240,240, 0.8);
+  min-height: 600px;
   margin-bottom: 40px;
 }
 
 body.one #backimg01,
 body.two #backimg02,
-body.three #backimg03{
+body.three #backimg03,
+body.four #backimg04,
+body.five #backimg05{
   opacity: 1;
 }
 
@@ -70,4 +73,16 @@ img{
 .content{
   display: none;
   padding: 30px;
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255,255,255, 0.9);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  bottom: 0;
+  font-family: 'Oswald', sans-serif;
 }
